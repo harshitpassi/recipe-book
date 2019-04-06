@@ -34,6 +34,6 @@ export class RecipeService {
 
     sendIngredientsToShoppingList(ingredients: Ingredient[]) {
         ingredients.forEach((ingredient) => this.slService.addIngredient(ingredient));
-        this.slService.ingredientAdded.emit();
+        this.slService.ingredientAdded.next();
     }
 }
