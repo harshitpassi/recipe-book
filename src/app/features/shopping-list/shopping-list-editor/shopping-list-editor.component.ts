@@ -19,7 +19,7 @@ export class ShoppingListEditorComponent implements OnInit {
   populateIngredient() {
     this.shoppingListService.addIngredient(new Ingredient(this.nameElement.nativeElement.value,
        this.amountElement.nativeElement.value));
-    this.shoppingListService.ingredientAdded.emit();
+    this.shoppingListService.ingredientAdded.next();
   }
 
 }
