@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Recipe } from '../recipe.model';
 import { RecipeService } from '../recipe.service';
 import { ActivatedRoute, Params } from '@angular/router';
+import { ID_LITERAL } from '../../shared/global-constants';
 
-const ID_LITERAL = 'id';
 
 @Component({
   selector: 'app-recipe-detail',
